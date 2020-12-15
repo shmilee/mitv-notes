@@ -106,16 +106,21 @@ done
 ## 安装应用
 
 * [Kodi](http://mirrors.kodi.tv/releases/android/arm/)
+* [电视家](https://www.idianshijia.com/)
 
 ```bash
 MYAPPDIR='myapks'
 find $MYAPPDIR -type f -name '*.apk' -print -exec adb install {} \;
 ```
 
-## Kodi IPTV
+## Kodi
+
+### 字体; 中文; 代理 etc.
+
+### IPTV
 
 * 安装 `PVR IPTV Simple Client`
-* 下载上传[IPTV直播源m3u8](http://www.kodiplayer.cn/movie/2898.html)
+* 下载上传[IPTV直播源m3u8](https://github.com/imDazui/Tvlist-awesome-m3u-m3u8)
    ```bash
    M3U='20201214-江苏移动.m3u'
    $ adb shell mkdir -pv /sdcard/iptv
@@ -123,3 +128,9 @@ find $MYAPPDIR -type f -name '*.apk' -print -exec adb install {} \;
    $ adb shell ls /sdcard/iptv/
    ```
 * 设置: 【插件】>【我的插件】>【PVR客户端】>【PVR IPTV Simple Client】>【设置】>【M3U播放列表路径】
+
+### Catch-up TV & More
+
+# 广告
+
+* `adhost` 屏蔽
